@@ -19,11 +19,7 @@ public class CSVMin {
         return lowestSoFar;
 
 }
-// public void testHottestInDay (){
-    // FileResource fr = new FileResource ("data/2015/weather-2015-01-01.csv"); 
-    // CSVRecord lowest = coldestHourInFile(fr.getCSVParser());
-    // System.out.println ( "hottest temperature was " + lowest.get("Temperature") + "at " + lowest.get("TimeEST"));
-// }
+       
 public CSVRecord getLowestOfTwo (CSVRecord currentRow, CSVRecord lowestSoFar){
 
  if (lowestSoFar == null){
@@ -41,28 +37,7 @@ public CSVRecord getLowestOfTwo (CSVRecord currentRow, CSVRecord lowestSoFar){
             return lowestSoFar;
         }
  
-     
-// public CSVRecord coldestHourInManyDays(){
-    // CSVRecord lowestSoFar = null ; 
-    // DirectoryResource dr = new DirectoryResource (); 
-    
-    // for (File f : dr.selectedFiles()){
-        // FileResource fr = new FileResource(f); 
-        // CSVRecord currentRow = coldestHourInFile(fr.getCSVParser());
-        // getLowestOfTwo(currentRow, lowestSoFar);
-        // String Temperature = lowestSoFar.get("TemperatureF"); 
-        // String DateUTC = lowestSoFar.get("DateUTC");
-        // System.out.println ( "hottest temperature was " + Temperature + "at " + DateUTC);
-    // }
-    // return lowestSoFar;
-// }
-    
-// public void testcoldestInManyDay (){
-    // CSVRecord lowestSoFar = coldestHourInManyDays();
-    // if (lowestSoFar != null){
-    // System.out.println ( "hottest temperature was " + lowestSoFar.get("TemperatureF") + "at " + lowestSoFar.get("DateUTC"));
-    // }
-// }
+
 public String fileWithColdestTemperature (){
     String file_Name =""; 
     CSVRecord lowestSoFar = null ;
