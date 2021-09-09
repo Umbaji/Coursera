@@ -51,10 +51,5 @@ public CSVRecord hottestHourInManyDays(){
     return largestSoFar;
 }
     
-public void testHottestInManyDay (){
-    CSVRecord largest = hottestHourInManyDays();
-    System.out.println ( "hottest temperature was " + largest.get("Temperature") + "at " + largest.get("DateUTC"));
-}
-    
 }
 
